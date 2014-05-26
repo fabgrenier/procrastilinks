@@ -4,7 +4,7 @@
 angular.module('mean.auth').config(['$stateProvider',
     function($stateProvider) {
         //================================================
-        // Check if the user is not conntect
+        // Check if the user is not connect
         //================================================
         var checkLoggedOut = function($q, $timeout, $http, $location) {
             // Initialize a new promise

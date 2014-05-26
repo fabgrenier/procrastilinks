@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: 'mongodb://localhost/mean-dev',
+    db: 'mongodb://localhost/pcl-dev',
     app: {
         name: 'Procrasti\'Links dev'
     },
