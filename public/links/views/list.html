@@ -1,0 +1,10 @@
+<section data-ng-controller="LinksController" data-ng-init="find()">
+    <ul class="links unstyled">
+        <li data-ng-repeat="link in links">
+            <span>{{link.created | date:'medium'}}</span> /
+            <span>{{link.user.name}}</span>
+            <h2><a data-ng-href="#!/links/{{link._id}}">{{link.url}}</a></h2>
+        </li>
+    </ul>
+    <h1 data-ng-hide="!links || links.length">No links yet. <br> Why don't you <a href="/#!/links/create">Create One</a>?</h1>
+</section>
